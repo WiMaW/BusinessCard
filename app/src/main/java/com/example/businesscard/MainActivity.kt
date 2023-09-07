@@ -26,6 +26,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -55,8 +56,15 @@ fun ComposeCard(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ){
-        NamePart(name = "Full Name", description = "Android Developer")
-        ContactPart(phone = "000 000 000", mail = "example@mail.com", social = "linkedin.com")
+        NamePart(
+            name = stringResource(R.string.full_name),
+            description = stringResource(R.string.android_developer)
+        )
+        ContactPart(
+            phone = stringResource(R.string.phone_number),
+            mail = stringResource(R.string.mail),
+            social = stringResource(R.string.social_media_link)
+        )
     }
 }
 
@@ -111,21 +119,21 @@ fun ContactPart(phone: String, mail: String, social: String, modifier: Modifier 
                 painter = painterResource(id = R.drawable.baseline_phone_white_24dp),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(36. dp)
+                    .size(36.dp)
                     .padding(bottom = 10.dp)
             )
             Icon(
                 painter = painterResource(id = R.drawable.baseline_email_white_24dp),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(36. dp)
+                    .size(36.dp)
                     .padding(bottom = 10.dp)
             )
             Icon(
                 painter = painterResource(id = R.drawable.baseline_people_white_24dp),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(36. dp)
+                    .size(36.dp)
                     .padding(bottom = 10.dp)
             )
         }

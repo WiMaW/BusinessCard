@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BusinessCard</string>
+    <string name="full_name">Full Name</string>
+    <string name="android_developer">Android Developer</string>
+    <string name="phone_number">000 000 000</string>
+    <string name="mail">example@mail.com</string>
+    <string name="social_media_link">linkedin.com</string>
 </resources>

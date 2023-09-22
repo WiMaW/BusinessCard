@@ -74,8 +74,9 @@ fun NamePart(name: String, description: String, modifier: Modifier = Modifier) {
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
-            .background(color = Color(red = 93, green = 176, blue = 141))
-            .fillMaxWidth()
+            
+            .fillMaxWidth(),
+        color = Color(red = 93, green = 176, blue = 141)
         ) {
         Column (
             horizontalAlignment = Alignment.CenterHorizontally,
